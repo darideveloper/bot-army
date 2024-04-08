@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Bot Creator Form</title>
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
   
@@ -28,6 +32,7 @@
           <div class="form h-100 contact-wrap p-5">
             <img src="./images/logo.png" alt="Bot Creator Form Logo" class="logo">
             <h3 class="text-center">Bot Creator Form</h3>
+            <img src="./images/process.png" alt="Bot Creator Process" class="process">
             <form class="mb-7" method="post" id="contactForm" name="contactForm" enctype="multipart/form-data" action="https://services-daridev-fde6e093283b.herokuapp.com/contact-form/" method="POST">
               
               <div class="row">
@@ -125,7 +130,7 @@
               <input type="hidden" name="api_key" value="64-EX0bq+;?'0.E+0o9hM">
               <input type="hidden" name="user" value="chatgpt-chatbot-service">
               <input type="hidden" name="subject" value="Bot: ">
-              <input type="hidden" name="redirect" value="https://www.darideveloper.com">
+              <input type="hidden" name="redirect" value="{dynamic}">
             </form>
           </div>
         </div>
@@ -137,21 +142,39 @@
     <script>
 
       // Update email subject
-      const input_email = document.getElementById('email');
-      const input_subject = document.querySelector('input[name="subject"]');
+      const input_email = document.getElementById('email')
+      const input_subject = document.querySelector('input[name="subject"]')
       input_email.addEventListener('input', () => {
-        input_subject.value = 'Bot: ' + input_email.value;
-      });
+        input_subject.value = 'Bot: ' + input_email.value
+      })
 
       // Update bot username
-      const input_name = document.getElementById('name');
-      const input_username = document.getElementById('user-name');
+      const input_name = document.getElementById('name')
+      const input_username = document.getElementById('user-name')
       input_name.addEventListener('input', () => {
-        const rand_number = Math.floor(Math.random() * 1000) + 100;
-        let name_clean = input_name.value.toLowerCase().replaceAll(' ', '_');
+        const rand_number = Math.floor(Math.random() * 1000) + 100
+        let name_clean = input_name.value.toLowerCase().replaceAll(' ', '_')
         name_clean = `${name_clean}_${rand_number}_bot`
-        input_username.value = name_clean;
-      });
+        input_username.value = name_clean
+      })
+
+      // Thanks message
+      const url_params = new URLSearchParams(window.location.search)
+      const thanks = url_params.get('thanks')
+      if (thanks) {
+        Swal.fire({
+          title: 'Bot Created!',
+          text: "We've received your bot information and it's gearing up.  Within 24 hours, you'll get an email with access to the configuration panel. There, you can upload the data that will make your bot a master of its domain!",
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+      }
+
+      // Update redirect page
+      const domain = window.location.origin
+      const thanks_page = `${domain}/?thanks=true`
+      const input_direct = document.querySelector('input[name="redirect"]')
+      input_direct.value = thanks_page
     </script>
 
   </body>

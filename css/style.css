@@ -170,10 +170,12 @@ label svg.warnning {
   margin-bottom: 20px;
 }
 
-h3 {
-  margin-bottom: 30px;
-}
-
 .form {
   border-radius: 20px;
+}
+
+.process {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
