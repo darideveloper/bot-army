@@ -179,3 +179,13 @@ label svg.warnning {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.btn-primary {
+  transition-duration: 0.5s;
+  margin-top: 30px;
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
