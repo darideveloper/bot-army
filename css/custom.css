@@ -1,0 +1,152 @@
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.landing {
+  padding-bottom: 0;
+}
+.landing h1 {
+  font-size: 30px;
+}
+.landing h2 {
+  font-size: 25px;
+}
+.landing h3 {
+  font-size: 20px;
+}
+.landing h1, .landing h2, .landing h3 {
+  text-align: center;
+}
+.landing a {
+  color: #38B6FF;
+  font-weight: bold;
+}
+.landing h1 + p {
+  text-align: center;
+  font-weight: bold;
+}
+.landing .blue-content {
+  background-color: #38B6FF;
+  padding: 30px 0;
+  color: white;
+  border-radius: 30px;
+  margin: 60px auto;
+  max-width: 500px;
+}
+.landing .blue-content h2, .landing .blue-content h3 {
+  color: white;
+  text-align: center;
+}
+.landing .blue-content h3 {
+  margin: 20px 0;
+}
+.landing .blue-content .logo {
+  border: 1px solid white;
+  border-radius: 50%;
+  border-width: 4px;
+}
+.landing .blue-content ul {
+  margin: 0 30px;
+  margin-bottom: 70px;
+}
+.landing .blue-content ul li {
+  list-style-image: url("../images/checkmark.png");
+}
+.landing .blue-content .cta {
+  margin: 0px 10px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: -100px;
+}
+.landing .blue-content .cta:hover .text .button {
+  opacity: 0.7;
+  transform: scale(1);
+}
+.landing .blue-content .cta img {
+  width: 35%;
+  margin-top: 150px;
+  margin-right: -15px;
+}
+.landing .blue-content .cta .text {
+  width: 65%;
+}
+.landing .blue-content .cta .text .top {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.landing .blue-content .cta .text .top .price {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+.landing .blue-content .cta .text .top .details {
+  font-size: 17px;
+  width: 100px;
+  margin: 0;
+}
+.landing .blue-content .cta .text .button {
+  border-radius: 15px;
+  background-color: white;
+  color: #38B6FF;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  transform: scale(0.95);
+}
+.landing .blue-content .telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: -30px;
+  min-width: 275px;
+}
+.landing .blue-content .telegram:hover img {
+  transform: scale(1.1);
+}
+.landing .blue-content .telegram:hover p {
+  transform: translateX(-20px);
+}
+.landing .blue-content .telegram p {
+  color: black;
+  font-weight: bold;
+  width: calc(100% - 60px);
+  margin: 0;
+  transition-duration: 0.2s;
+}
+.landing .blue-content .telegram img {
+  width: 80px;
+  transition-duration: 0.2s;
+}
+.landing .details {
+  margin-top: 50px;
+}
+.landing .details h2 {
+  margin-bottom: 30px;
+}
+.landing footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.landing footer a, .landing footer p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=custom.css.map */
