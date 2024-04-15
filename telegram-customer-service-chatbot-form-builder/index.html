@@ -174,8 +174,8 @@
       }
 
       // Update redirect page
-      const domain = window.location.origin
-      const thanks_page = `${domain}/?thanks=true`
+      const url = window.location
+      const thanks_page = `${url}/?thanks=true`
       const input_direct = document.querySelector('input[name="redirect"]')
       input_direct.value = thanks_page
     </script>
