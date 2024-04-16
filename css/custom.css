@@ -148,5 +148,22 @@ body {
 .landing footer a, .landing footer p {
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  .landing .blue-content ul {
+    margin-bottom: 20px;
+  }
+  .landing .blue-content .cta {
+    margin-top: 0;
+  }
+  .landing .blue-content .cta img {
+    display: none;
+  }
+  .landing .blue-content .cta .text {
+    width: 90%;
+  }
+  .landing footer {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=custom.css.map */
