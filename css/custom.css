@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6, .title {
   font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -196,6 +197,18 @@ footer a, footer p {
   .landing .blue-content .cta .text {
     width: 90%;
   }
+}
+
+.legals .container h1, .legals .container h2, .legals .container p {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.legals .container h1 {
+  margin-top: 50px;
+}
+.legals .container h2 {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=custom.css.map */

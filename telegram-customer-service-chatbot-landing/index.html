@@ -151,44 +151,5 @@
     </footer>
 
   </div>
-    
-    <script>
-
-      // Update email subject
-      const input_email = document.getElementById('email')
-      const input_subject = document.querySelector('input[name="subject"]')
-      input_email.addEventListener('input', () => {
-        input_subject.value = 'Bot: ' + input_email.value
-      })
-
-      // Update bot username
-      const input_name = document.getElementById('name')
-      const input_username = document.getElementById('user-name')
-      input_name.addEventListener('input', () => {
-        const rand_number = Math.floor(Math.random() * 1000) + 100
-        let name_clean = input_name.value.toLowerCase().replaceAll(' ', '_')
-        name_clean = `${name_clean}_${rand_number}_bot`
-        input_username.value = name_clean
-      })
-
-      // Thanks message
-      const url_params = new URLSearchParams(window.location.search)
-      const thanks = url_params.get('thanks')
-      if (thanks) {
-        Swal.fire({
-          title: 'Bot Created!',
-          text: "We've received your bot information and it's gearing up.  Within 24 hours, you'll get an email with access to the configuration panel. There, you can upload the data that will make your bot a master of its domain!",
-          icon: 'success',
-          confirmButtonText: 'Ok'
-        })
-      }
-
-      // Update redirect page
-      const url = window.location
-      const thanks_page = `${url}/?thanks=true`
-      const input_direct = document.querySelector('input[name="redirect"]')
-      input_direct.value = thanks_page
-    </script>
-
   </body>
 </html>
