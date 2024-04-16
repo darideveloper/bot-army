@@ -54,6 +54,10 @@ a {
   font-weight: bold;
 }
 
+img.process {
+  width: 100%;
+}
+
 footer {
   margin-top: 40px;
   display: flex;
