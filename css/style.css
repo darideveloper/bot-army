@@ -159,30 +159,3 @@ label svg.warnning {
   opacity: 0.4;
   fill: red;
 }
-
-.logo {
-  width: 100px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.form {
-  border-radius: 20px;
-}
-
-.process {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.btn-primary {
-  transition-duration: 0.5s;
-  margin-top: 30px;
-  opacity: 1;
-}
-
-.btn-primary:hover {
-  opacity: 0.8;
-}
