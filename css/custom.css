@@ -215,4 +215,17 @@ footer a, footer p {
   margin-top: 30px;
 }
 
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home img {
+  width: 30vw;
+  height: auto;
+}
+
 /*# sourceMappingURL=custom.css.map */
